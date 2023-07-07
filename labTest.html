@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        Pharmacy
+    </header>
+        <ul class="navigation">
+            <li class="menu">
+                <a href="home.html">Home</a>
+            </li>
+            <li class="menu">
+                <a href="#">Our Medicines</a>
+                <div class="dropdown-content">
+                    <a href="#">Fever</a>
+                    <a href="#">Muscle Pains</a>
+                    <a href="#">Cold and Cough</a>
+                </div>
+            </li>
+            <li class="menu">
+                <a href="#">Health Care</a>
+                <div class="dropdown-content">
+                    <a href="#">Baby Care</a>
+                    <a href="#">Skin Care</a>
+                    <a href="#">Home Care</a>
+                    <a href="#">Personal Care</a>
+                    <a href="#">Pet Care</a>
+                </div>
+            </li>
+            <li class="menu">
+                <a href="labTest.html">Lab Test</a>
+            </li>
+        </ul>
+    </div>
+        <div class="form" >
+            <img src="Lab-Test/lab-test.jpg" class="img_lab">
+            <form id="myform">
+                <h2>1. Your Contact Details</h2>
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="Patient Id if exists">
+                    <br><hr><hr><br>
+                    <input type="number" placeholder="Contact Number">
+                    <input type="email" placeholder="Email id">
+                    <br><hr><hr><br>
+                <h2>2. Address</h2>
+                    <input type="text" placeholder="H-No">
+                    <input type="text" placeholder="Street">
+                    <br><hr><hr><br>
+                    <input type="text" placeholder="Area">
+                    <br><hr><br>
+                    <h3>District</h3>
+                    <select id="district" name="district">
+                        <option value="choose">Choose</option>
+                        <option value="Amritsar">Amritsar</option>
+                        <option value="Jalandhar">Jalandhar</option>
+                        <option value="Ludhiana">Ludhiana</option>
+                    </select>
+                <h2>3. Test Type</h2>
+                    <p>Note: Check atleast one box without fail</p>
+                    <input type="checkbox" id="test1" name="test1" value="CBC">
+                    <label for="test1">CBC</label>
+                    <input type="checkbox" id="test2" name="test2" value="Complete Urine">
+                    <label for="test2">Complete Urine</label>
+                    <input type="checkbox" id="test3" name="test3" value="Lipid Profile">
+                    <label for="test3">Lipid Profile</label>
+                    <input type="checkbox" id="test4" name="test4" value="Thyroid Stimulating Hormone(TSH)">
+                    <label for="test4">Thyroid Stimulating Hormone(TSH)</label>
+                    <input type="checkbox" id="test5" name="test5" value="Glucose Test">
+                    <label for="test5">Glucose Test</label>
+                <h2>4. Do you want a hard copy of the report also</h2>
+                    <input type="radio" id="hardcopy" name="hardcopy" value="Yes">
+                    <label for="hardcopy">Yes</label>
+                    <input type="radio" id="hardcopy" name="hardcopy" value="No">
+                    <label for="hardcopy">No</label>
+                <h2>5. Select Date and Time</h2>
+                <input type="datetime-local" id="datetime" name="datetime">
+        </div>
+
+                    <div class="button_form">
+                    <input type="reset" value="Reset" for="myform">
+                    <input type="submit" value="Submit" for="myform">
+                    </div>
+            </form>
+        <footer>
+            @copyright. Only for demonstration purposes
+        </footer>
+</body>
+</html>
